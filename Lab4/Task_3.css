@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.accordion {
+    width: 60%;
+    margin: 20px auto;
+    border: 2px solid #004aad;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    background-color: #004aad;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    display: none;
+    background-color: white;
+    padding: 15px;
+}
+
+.accordion-header:hover {
+    background-color: #003885;
+}
+
+.accordion-header:after {
+    content: "+";
+    font-size: 18px;
+}
+
+.accordion-item.active .accordion-header:after {
+    content: "-";
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="Task_1.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="login">Логін:</label>
+            <input type="text" id="login" name="login">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Повторіть пароль:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+        </div>
+
+        <div class="form-group">
+            <label>Стать:</label>
+            <label><input type="radio" id="male" name="gender" value="чоловік"> чоловік</label>
+            <label><input type="radio" id="female" name="gender" value="жінка"> жінка</label>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Вкажіть місто:</label>
+            <select id="city" name="city">
+                <option value="Житомир">Житомир</option>
+                <option value="Київ">Київ</option>
+                <option value="Львів">Львів</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Інтереси:</label>
+            <label><input type="checkbox" id="football" name="interests" value="футбол"> футбол</label>
+            <label><input type="checkbox" id="chess" name="interests" value="шахи"> шахи</label>
+            <label><input type="checkbox" id="drawing" name="interests" value="малювання"> малювання</label>
+            <label><input type="checkbox" id="music" name="interests" value="музика"> музика</label>
+        </div>
+
+        <div class="form-group buttons">
+            <button type="reset">Очистити</button>
+            <button type="submit">Відправити</button>
+        </div>
+    </form>
+
+    <script src="Task_1.js"></script>
+</body>
+</html>
